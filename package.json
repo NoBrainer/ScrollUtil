@@ -1,0 +1,34 @@
+{
+  "author": {
+    "email": "vincent.incarvite@gmail.com",
+    "name": "Vincent Incarvite"
+  },
+  "bugs": {
+    "url": "https://github.com/NoBrainer/ScrollUtil/issues"
+  },
+  "dependencies": {},
+  "description": "Utility for scrolling to elements.",
+  "devDependencies": {
+    "browserify": "14.4.0",
+    "uglify-js": "2.4.x"
+  },
+  "files": [
+    "scrollUtil.js",
+    "scrollUtil-min.js",
+    "scrollUtil-min.map",
+    "LICENSE.md"
+  ],
+  "license": "MIT",
+  "main": "scrollUtil.js",
+  "name": "ScrollUtil",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/NoBrainer/ScrollUtil.git"
+  },
+  "scripts": {
+    "build": "uglifyjs scrollUtil.js -c \"evaluate=false\" --comments \"/    .*/\" -m --source-map scrollUtil-min.map -o scrollUtil-min.js",
+    "compileExample": "browserify example/example.js > example/example-compiled.js"
+  },
+  "version": "0.0.1"
+}
