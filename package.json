@@ -9,8 +9,8 @@
   "dependencies": {},
   "description": "Utility for scrolling to elements.",
   "devDependencies": {
-    "browserify": "14.4.0",
-    "uglify-js": "2.4.x"
+    "browserify": "16.2.2",
+    "uglify-js": "3.3.25"
   },
   "files": [
     "scrollUtil.js",
@@ -30,5 +30,5 @@
     "build": "uglifyjs scrollUtil.js -c \"evaluate=false\" --comments \"/    .*/\" -m --source-map scrollUtil-min.map -o scrollUtil-min.js",
     "compileExample": "browserify example/example.js > example/example-compiled.js"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
